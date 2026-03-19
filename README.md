@@ -124,3 +124,11 @@ Distributed under the MIT License. See LICENSE for more information.
 🙌 Acknowledgements
 
 Thanks for checking out this project! Use it as a learning resource, contribute improvements, or expand it into a full‑featured healthcare application.
+
+---
+
+
+## Author
+
+Peeyush Pareek
+Aspiring Backend Java Developer
