@@ -39,12 +39,18 @@ This project is a great example of building scalable REST APIs with Spring Boot 
 | Backend | Java (Spring Boot) |
 | Web | Spring MVC / REST |
 | Data | JPA / Hibernate |
-| Database | (Assumed) MySQL / PostgreSQL |
+| Database | PostgreSQL |
 | Build | Maven |
-| Testing | JUnit / Mockito (optional) |
-| Code Quality | Lombok (optional), DTO patterns |
+| Testing | JUnit / Mockito (Not implemented yet) |
+| Code Quality | Lombok, DTO patterns |
 
 ## 🚀 Getting Started
+
+### 📥 Make sure you have:
+
+- Java 17+ (or compatible with the project’s pom.xml)
+- Maven installed and configured
+- A running SQL database (e.g., MySQL)
 
 ### 📥 Installation
 
@@ -53,44 +59,43 @@ This project is a great example of building scalable REST APIs with Spring Boot 
    git clone https://github.com/peeyush-pareek-in-tallinn/Hospital-Management-System.git
    cd Hospital-Management-System
 
-Open the project in your favorite IDE (IntelliJ IDEA / Eclipse / VS Code).
+2. Open the project in your favorite IDE (IntelliJ IDEA / Eclipse / VS Code).
 
-Make sure you have:
-
-Java 17+ (or compatible with the project’s pom.xml)
-
-Maven installed and configured
-
-A running SQL database (e.g., MySQL)
-
-⚙️ Configuration
+### ⚙️ Configuration
 
 Update the application properties (application.properties or application.yml) with your database credentials:
 
-spring.datasource.url=jdbc:mysql://localhost:3306/hospital_db
-spring.datasource.username=your_username
-spring.datasource.password=your_password
+- spring.datasource.url=jdbc:mysql://localhost:3306/hospital_db
+- spring.datasource.username=your_username
+- spring.datasource.password=your_password
 
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
+- spring.jpa.hibernate.ddl-auto=update
+- spring.jpa.show-sql=true
+
 ▶️ Run the App
+
+```
 mvn clean install
 mvn spring-boot:run
+```
 
 Once started, your APIs will be available at:
 
 http://localhost:8080/api/
-📊 API Endpoints (Example)
-Endpoint	Method	Description
-/api/patients	GET	List all patients
-/api/patients/{id}	GET	Get patient by ID
-/api/patients	POST	Create a new patient
-/api/doctors	GET	List all doctors
-/api/insurances	POST	Create insurance for patient
 
-Add a full API reference here if you have Swagger or similar set up.
+### 📊 API Endpoints
+| Endpoint |	Method |	Description |
+|----------|---------|--------------|
+| /api/patients |	GET |	List all patients |
+| /api/patients/{id} |	GET |	Get patient by ID |
+| /api/patients |	POST |	Create a new patient |
+| /api/doctors |	GET |	List all doctors |
+| /api/insurances |	POST |	Create insurance for patient |
 
-🧱 Project Structure (Suggested)
+
+### 🧱 Project Structure
+
+```
 src/
 ├── main/
 │   ├── java/
@@ -103,32 +108,34 @@ src/
 │   │       └── exception/
 │   └── resources/
 │       └── application.properties
-🤝 Contributing
+```
+
+## 🤝 Contributing
 
 Contributions are welcome! Here’s how you can help:
 
-⭐️ Star the repo
+- ⭐️ Star the repo
 
-🍴 Fork it
+- 🍴 Fork it
 
-📝 Create a new branch
+- 📝 Create a new branch
 
-💡 Implement your feature
+- 💡 Implement your feature
 
-📣 Open a Pull Request
+- 📣 Open a Pull Request
 
-📜 License
+## 📜 License
 
 Distributed under the MIT License. See LICENSE for more information.
 
-🙌 Acknowledgements
+## 🙌 Acknowledgements
 
 Thanks for checking out this project! Use it as a learning resource, contribute improvements, or expand it into a full‑featured healthcare application.
 
 ---
 
 
-## Author
+## 🧑‍⚕️ Author
 
 Peeyush Pareek
 Aspiring Backend Java Developer
